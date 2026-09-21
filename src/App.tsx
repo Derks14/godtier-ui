@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 
 export function App() {
   return (
     <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
+      <div className="flex max-w-md min-w-0 flex-col gap-4">
         <div>
           <h1 className="font-medium">Project ready!</h1>
           <p>You may now add components and start building.</p>
@@ -15,7 +15,7 @@ export function App() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
