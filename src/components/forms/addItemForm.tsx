@@ -46,7 +46,6 @@ const addItemForm = ({ content, setContent }: addItemFormProps) => {
 
   function onSubmit(data: ItemValidationSchema) {
     // Do something with the form values.
-    console.log(data);
     const newContent = {
       id: crypto.randomUUID(),
       title: data.title,

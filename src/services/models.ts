@@ -1,7 +1,6 @@
 export type Tier = {
-  id: number;
-  name: string;
-  list: string;
+  id: string;
+  title: string;
 };
 
 export type Item = {
@@ -13,4 +12,19 @@ export type Item = {
 export type Topic = {
   id: string;
   title: string;
+  created: string;
 };
+
+export type fetchDataParamsType = {
+  page?: number;
+  size?: number;
+  search?: string;
+};
+
+export type fetchDataParamKeyType = [string, fetchDataParamsType];
+
+export type fetchTiersParamsType = fetchDataParamsType & {
+  topicId?: string;
+};
+
+export type fetchTiersParamsKeyType = [string, fetchTiersParamsType];
